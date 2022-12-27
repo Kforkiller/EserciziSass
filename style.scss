@@ -1,0 +1,36 @@
+$red: red;
+$blue: blue;
+$green: green;
+
+@mixin article-card($color, $border-color, $font-size: 1rem){
+    color: $color;
+    border: 1px solid $border-color;
+    font-size: $font-size;
+}
+
+div {
+    text-align: center;
+    border: 1px solid $red;
+    h1 {
+    color: $green;
+    text-decoration: underline $blue;
+    }   
+        section{
+        border: 1px solid $green;
+        margin: 20px;
+        display: flex;
+            article {
+            border:1px solid $green;
+            color: $red;
+            @include article-card($red, $green);
+            &:nth-child(odd){
+                @include article-card($blue, $green);
+            }
+            }
+                &:last-child{
+                article{
+                @include article-card($green, $blue, 2rem);
+                }
+        }
+}
+}
