@@ -1,0 +1,24 @@
+$red: red;
+$blue: blue;
+$green: green;
+
+div {
+    text-align: center;
+    border: 1px solid $red;
+    h1 {
+    color: $green;
+    text-decoration: underline $blue;
+    }   
+        section{
+        border: 1px solid $green;
+        margin: 20px;
+        display: flex;
+        }
+            article {
+            border:1px solid $green;
+            color: $red;
+                &:nth-child(odd){
+                color: $blue;
+                }
+}
+}

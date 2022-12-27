@@ -1,0 +1,22 @@
+div {
+  text-align: center;
+  border: 1px solid red;
+}
+div h1 {
+  color: green;
+  text-decoration: underline blue;
+}
+div section {
+  border: 1px solid green;
+  margin: 20px;
+  display: flex;
+}
+div article {
+  border: 1px solid green;
+  color: red;
+}
+div article:nth-child(odd) {
+  color: blue;
+}
+
+/*# sourceMappingURL=style.css.map */
