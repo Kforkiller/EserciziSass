@@ -1,4 +1,4 @@
-@use "module";
+@use "module" as m;
 
 
 $red: red;
@@ -7,23 +7,23 @@ $green: green;
 
 @mixin article-card($color, $border-color, $font-size: 1rem){
     color: $color;
-    border: module.rem(1px) solid $border-color;
+    border: #{m.rem(1px)} solid $border-color;
     font-size: $font-size;
 }
 
 div {
     text-align: center;
-    border: module.rem(1px) solid $red;
+    border: #{m.rem(1px)} solid $red;
     h1 {
     color: $green;
     text-decoration: underline $blue;
     }   
         section{
-        border: module.rem(1px) solid $green;
-        margin: module.rem(20px);
+        border: #{m.rem(1px)} solid $green;
+        margin: #{m.rem(20px)};
         display: flex;
             article {
-            border:module.rem(1px) solid $green;
+            border:#{m.rem(1px)} solid $green;
             color: $red;
             @include article-card($red, $green);
             &:nth-child(odd){
