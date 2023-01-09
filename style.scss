@@ -1,0 +1,85 @@
+@use "module" as m;
+@use "sass:color";
+$red: red;
+$blue: blue;
+$green: green;
+$color:white;
+
+@mixin article-card($color, $border-color, $font-size: 1rem){
+    color: $color;
+    border: #{m.rem(1px)} solid $border-color;
+    font-size: $font-size;
+}
+
+%size{
+    width: #{m.rem(45px)};
+    height: #{m.rem(45px)};
+    display: flex;
+    justify-content: space-between;
+}
+
+%text{
+    border: #{m.rem(1px)} solid $red;
+    padding: #{m.rem(1px)};
+}
+
+$classes: (
+    "fs-1rem": 1rem,
+    "fs-2rem": 2rem,
+    "fs-3rem": 3rem
+);
+
+@each $key,$value in $classes{
+    .#{$key}{
+    @extend %size;
+    font-size: $value;
+    }
+}
+
+div {
+    text-align: center;
+    border: #{m.rem(1px)} solid $red;
+    h1 {
+    color: $green;
+    text-decoration: underline $blue;
+    }   
+    h2
+    {
+        width: #{m.rem(500px)};
+        margin: auto;
+        @extend %text
+    }
+        section{
+        margin: #{m.rem(20px)};
+        display: flex;
+        justify-content: space-between;
+            article {
+            border:#{m.rem(1px)} solid $green;
+            color: $red;
+            @include article-card($red, $green);
+            &:nth-child(odd){
+                @include article-card($blue, $green);
+            }
+            }
+            div{
+                @for $index from 1 through 20{
+                    &:nth-child(#{$index}){
+                        @if $index == 10{
+                        background-color: blue;
+                        color:red;
+                        }@else{
+                    background-color: darken($color,5% * $index);
+                        $color: black;
+                        color: lighten($color, 5% * $index);
+                        }
+                    }
+                }
+            }
+                &:last-child{
+                article{
+                @include article-card($green, $blue, 2.4rem);
+                }
+        }
+    }
+}
+

@@ -1,0 +1,140 @@
+.fs-3rem, .fs-2rem, .fs-1rem {
+  width: 2.8125rem;
+  height: 2.8125rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+div h2 {
+  border: 0.0625rem solid red;
+  padding: 0.0625rem;
+}
+
+.fs-1rem {
+  font-size: 1rem;
+}
+
+.fs-2rem {
+  font-size: 2rem;
+}
+
+.fs-3rem {
+  font-size: 3rem;
+}
+
+div {
+  text-align: center;
+  border: 0.0625rem solid red;
+}
+div h1 {
+  color: green;
+  text-decoration: underline blue;
+}
+div h2 {
+  width: 31.25rem;
+  margin: auto;
+}
+div section {
+  margin: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+}
+div section article {
+  border: 0.0625rem solid green;
+  color: red;
+  color: red;
+  border: 0.0625rem solid green;
+  font-size: 1rem;
+}
+div section article:nth-child(odd) {
+  color: blue;
+  border: 0.0625rem solid green;
+  font-size: 1rem;
+}
+div section div:nth-child(1) {
+  background-color: #f2f2f2;
+  color: #0d0d0d;
+}
+div section div:nth-child(2) {
+  background-color: #e6e6e6;
+  color: #1a1a1a;
+}
+div section div:nth-child(3) {
+  background-color: #d9d9d9;
+  color: #262626;
+}
+div section div:nth-child(4) {
+  background-color: #cccccc;
+  color: #333333;
+}
+div section div:nth-child(5) {
+  background-color: #bfbfbf;
+  color: #404040;
+}
+div section div:nth-child(6) {
+  background-color: #b3b3b3;
+  color: #4d4d4d;
+}
+div section div:nth-child(7) {
+  background-color: #a6a6a6;
+  color: #595959;
+}
+div section div:nth-child(8) {
+  background-color: #999999;
+  color: #666666;
+}
+div section div:nth-child(9) {
+  background-color: #8c8c8c;
+  color: #737373;
+}
+div section div:nth-child(10) {
+  background-color: blue;
+  color: red;
+}
+div section div:nth-child(11) {
+  background-color: #737373;
+  color: #8c8c8c;
+}
+div section div:nth-child(12) {
+  background-color: #666666;
+  color: #999999;
+}
+div section div:nth-child(13) {
+  background-color: #595959;
+  color: #a6a6a6;
+}
+div section div:nth-child(14) {
+  background-color: #4d4d4d;
+  color: #b3b3b3;
+}
+div section div:nth-child(15) {
+  background-color: #404040;
+  color: #bfbfbf;
+}
+div section div:nth-child(16) {
+  background-color: #333333;
+  color: #cccccc;
+}
+div section div:nth-child(17) {
+  background-color: #262626;
+  color: #d9d9d9;
+}
+div section div:nth-child(18) {
+  background-color: #1a1a1a;
+  color: #e6e6e6;
+}
+div section div:nth-child(19) {
+  background-color: #0d0d0d;
+  color: #f2f2f2;
+}
+div section div:nth-child(20) {
+  background-color: black;
+  color: white;
+}
+div section:last-child article {
+  color: green;
+  border: 0.0625rem solid blue;
+  font-size: 2.4rem;
+}
+
+/*# sourceMappingURL=style.css.map */
